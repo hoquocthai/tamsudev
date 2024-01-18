@@ -1,0 +1,31 @@
+.review-filter {
+  .input-container {
+    position: relative;
+    .option-list {
+      position: absolute;
+      top: 40px;
+      width: 100%;
+      background-color: white;
+      max-height: 140px;
+      overflow-y: scroll;
+      .option-card {
+        background-color: white;
+        width: 100%;
+        display: block;
+        padding: 3px 0;
+        padding-left: 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+}
+
+.review-modal {
+  background-color: unset;
+  .review-modal__title {
+    font-size: 16px;
+  }
+}

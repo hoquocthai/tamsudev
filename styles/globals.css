@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+@font-face {
+  font-family: UVNMayChuP;
+  src: url(../fonts/UVNMayChuP_R.TTF); }
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  color: dimgray;
+  background: #e8eff5;
+  overflow: visible !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.slogan{
+  font-family: UVNMayChuP,Arial,sans-serif;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}

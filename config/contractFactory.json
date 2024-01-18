@@ -1,0 +1,187 @@
+{
+  "_name": "SendIpfsHash",
+  "_version": "v0.8.17+commit.8df45f5f",
+  "address": "0xa5DE38E090577D556d5e9d80DDe58498c43F1C84",
+  "api": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "_cidComment",
+          "type": "string"
+        }
+      ],
+      "name": "AddLatestCommentInfo",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "_companyHash",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "_commentHash",
+          "type": "string"
+        }
+      ],
+      "name": "AddNewComment",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "_companyHash",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "_companyName",
+          "type": "string"
+        }
+      ],
+      "name": "AddNewCompany",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "_ipfsHashChild",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "_ipfsHashParent",
+          "type": "string"
+        }
+      ],
+      "name": "AddNewSubComment",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        { "internalType": "string", "name": "_cidComment", "type": "string" }
+      ],
+      "name": "addLatestCommentInfo",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "string", "name": "_companyHash", "type": "string" },
+        { "internalType": "string", "name": "_commentHash", "type": "string" }
+      ],
+      "name": "addNewComment",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "string", "name": "_companyHash", "type": "string" },
+        { "internalType": "string", "name": "_companyName", "type": "string" }
+      ],
+      "name": "addNewCompany",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_ipfsHashChild",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_ipfsHashParent",
+          "type": "string"
+        }
+      ],
+      "name": "addNewSubComment",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "string", "name": "_companyHash", "type": "string" }
+      ],
+      "name": "getArrComment",
+      "outputs": [
+        { "internalType": "string[]", "name": "", "type": "string[]" }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getArrCompany",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "companyHash",
+              "type": "string"
+            },
+            { "internalType": "string", "name": "name", "type": "string" }
+          ],
+          "internalType": "struct SendIpfsHash.CompanyHash[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "string", "name": "_ipfsHash", "type": "string" }
+      ],
+      "name": "getArrRepComment",
+      "outputs": [
+        { "internalType": "string[]", "name": "", "type": "string[]" }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getCommentHistory",
+      "outputs": [
+        { "internalType": "string[]", "name": "", "type": "string[]" }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "string", "name": "_companyName", "type": "string" }
+      ],
+      "name": "getCompanyHash",
+      "outputs": [
+        { "internalType": "string", "name": "_name", "type": "string" }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
